@@ -8,13 +8,21 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
 }
 
 body {
-  padding: 6.4rem 9.6rem;
+  padding: 6.4rem 0;
   background-image: linear-gradient(
     to bottom right,
     $color-primary-light,
     $color-primary-dark
   );
+
+  @include respond(tab-land) {
+    padding: 0;
+  }
 }

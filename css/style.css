@@ -29,10 +29,16 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
 
 body {
-  padding: 6.4rem 9.6rem;
+  padding: 6.4rem 0;
   background-image: linear-gradient(to bottom right, #ff3366, #ba265d); }
+  @media only screen and (max-width: 75em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Open Sans";
@@ -94,7 +100,8 @@ body {
   padding: 3.6rem; }
   .cta__book-now {
     color: #777;
-    margin-bottom: 2.4rem; }
+    margin-bottom: 2.4rem;
+    font-size: 2rem; }
   .cta__btn {
     position: relative;
     width: 28rem;
@@ -397,6 +404,3 @@ body {
     width: 1.6rem;
     height: 1.6rem;
     fill: #faf9f9; }
-
-.content {
-  min-height: 91%; }
