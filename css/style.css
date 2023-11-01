@@ -48,6 +48,22 @@ body {
 .flex-col {
   flex-direction: column; }
 
+.btn {
+  text-decoration: none;
+  text-align: center;
+  align-self: center; }
+  .btn:link, .btn:visited {
+    color: #eb2f64;
+    border-bottom: 1px solid #eb2f64;
+    transition: all 0.3s; }
+  .btn:hover, .btn:active {
+    color: #333;
+    border-bottom: 1px solid #333; }
+  .btn--sm {
+    font-size: 1.2rem; }
+  .btn--md {
+    font-size: 1.6rem; }
+
 .details {
   display: flex;
   gap: 3.6rem; }
@@ -98,6 +114,40 @@ body {
     border: 3px solid #fff; }
     .description__recommend-img:not(:last-child) {
       margin-right: -1.6rem; }
+
+.review {
+  padding: 2.4rem;
+  box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.15); }
+  .review__text {
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem; }
+  .review__details {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem; }
+  .review__img {
+    max-height: 4.8rem;
+    border-radius: 50%; }
+  .review__user-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem; }
+  .review__user {
+    font-size: 1.2rem;
+    font-weight: 700; }
+  .review__date {
+    font-size: 1rem;
+    color: #999; }
+  .review__score {
+    margin-left: auto;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #eb2f64; }
+  .review__show-all {
+    text-align: center; }
+    .review__show-all:link, .review__show-all:visited {
+      text-decoration: none; }
 
 .search {
   position: relative;
@@ -197,16 +247,6 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem; }
-    .overview__location-link {
-      text-decoration: none; }
-      .overview__location-link:link, .overview__location-link:visited {
-        color: #eb2f64;
-        font-size: 1.2rem;
-        border-bottom: 1px solid #eb2f64;
-        transition: all 0.3s; }
-      .overview__location-link:hover, .overview__location-link:active {
-        color: #333;
-        border-bottom: 1px solid #333; }
   .overview__rating {
     display: flex;
     flex-direction: column;
@@ -239,8 +279,7 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
-  height: 100vh; }
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3); }
 
 .hotel-content {
   padding: 3.6rem;
