@@ -32,6 +32,9 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   padding: 6.4rem 0;
@@ -252,12 +255,18 @@ body {
     margin: auto 0;
     padding: 1.2rem 2rem;
     transition: all 0.3s; }
+    @media only screen and (max-width: 56.25em) {
+      .search__input {
+        width: 25rem; } }
     .search__input::placeholder {
       color: #999;
       font-size: 1.4rem;
       font-weight: 300; }
     .search__input:focus {
       width: 50rem; }
+      @media only screen and (max-width: 56.25em) {
+        .search__input:focus {
+          width: 30rem; } }
   .search__btn {
     position: absolute;
     background-color: transparent;
@@ -365,6 +374,9 @@ body {
   .header__search-box {
     height: 4rem;
     align-self: center; }
+    @media only screen and (max-width: 56.25em) {
+      .header__search-box {
+        height: 3rem; } }
 
 .container {
   max-width: 120rem;
@@ -381,9 +393,16 @@ body {
 .side-nav {
   background-color: #333;
   padding-top: 2.4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .side-nav {
+      padding: 0; } }
   .side-nav__list {
     list-style: none;
     width: 22.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__list {
+        display: flex;
+        width: auto; } }
   .side-nav__item {
     padding: 1.6rem 3.6rem;
     animation: navMouseOut 0.4s ease backwards; }
@@ -391,6 +410,12 @@ body {
       background-color: #eb2f64; }
     .side-nav__item:hover {
       animation: navMouseIn 0.3s ease-in forwards; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1; } }
   .side-nav__link {
     display: flex;
     justify-content: flex-start;
@@ -404,3 +429,7 @@ body {
     width: 1.6rem;
     height: 1.6rem;
     fill: #faf9f9; }
+
+@media only screen and (max-width: 56.25em) {
+  .content {
+    flex-direction: column; } }

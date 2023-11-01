@@ -13,6 +13,10 @@
     padding: 1.2rem 2rem;
     transition: all 0.3s;
 
+    @include respond(tab-port) {
+      width: 25rem;
+    }
+
     &::placeholder {
       color: $color-gray-dark-3;
       font-size: 1.4rem;
@@ -21,6 +25,10 @@
 
     &:focus {
       width: 50rem;
+
+      @include respond(tab-port) {
+        width: 30rem;
+      }
     }
   }
 

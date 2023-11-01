@@ -17,5 +17,9 @@
   &__search-box {
     height: 4rem;
     align-self: center;
+
+    @include respond(tab-port) {
+      height: 3rem;
+    }
   }
 }
