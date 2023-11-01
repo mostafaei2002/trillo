@@ -1,1 +1,18 @@
+.details {
+  display: flex;
+  gap: $details-gutter;
 
+  &__description {
+    background-color: $color-gray-light-1;
+  }
+
+  &__reviews {
+    display: flex;
+    flex-direction: column;
+    gap: $details-gutter;
+  }
+
+  .review {
+    background-color: $color-gray-light-1;
+  }
+}

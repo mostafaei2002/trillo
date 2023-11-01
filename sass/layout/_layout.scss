@@ -8,7 +8,10 @@
   height: 100vh;
 }
 
-.hotel-container {
-  padding: 3.6rem;
+.hotel-content {
+  padding: $details-gutter;
   background-color: $color-gray-light-3;
+  display: flex;
+  flex-direction: column;
+  gap: $details-gutter;
 }
