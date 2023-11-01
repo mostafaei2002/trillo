@@ -14,12 +14,58 @@
     <title>trillo &mdash; Your all-in-one booking app</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo-box">logo</div>
-      <div class="header__search-box">search</div>
-      <div class="header__left-box">left box</div>
+    <h1>Testing the default font</h1>
+    <header class="header container">
+      <div class="header__logo-box">
+        <img class="header__logo" src="img/logo.png" alt="Trillo Logo" />
+      </div>
+
+      <div class="header__search-box">
+        <form action="#" class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="search__input"
+            placeholder="Search hotels"
+          />
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <nav class="user-nav">
+        <div class="user-nav__bookmarks">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__bookmarks-icon user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__bookmarks-count user-nav__counter">7</span>
+          </div>
+        </div>
+        <div class="user-nav__messages">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__messages-icon user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__messages-count user-nav__counter">13</span>
+          </div>
+        </div>
+        <div class="user-nav__profile">
+          <img
+            src="img/user.jpg"
+            alt="user-picture"
+            class="user-nav__profile-picture"
+          />
+          <span class="user-nav__profile-username">Jonas</span>
+        </div>
+      </nav>
     </header>
-    <main>
+
+    <div class="content">
       <aside class="nav">
         <nav class="nav__nav">
           <ul class="nav__list">
@@ -27,12 +73,14 @@
           </ul>
         </nav>
       </aside>
-      <article class="hotel">
-        <section class="hotel__images">images</section>
-        <section class="hotel__hotel">hotel</section>
-        <section class="hotel__testimonies"></section>
-        <section class="hotel__cta"></section>
-      </article>
-    </main>
+      <main class="container">
+        <article class="hotel">
+          <section class="hotel__images">images</section>
+          <section class="hotel__hotel">hotel</section>
+          <section class="hotel__testimonies"></section>
+          <section class="hotel__cta"></section>
+        </article>
+      </main>
+    </div>
   </body>
 </html>

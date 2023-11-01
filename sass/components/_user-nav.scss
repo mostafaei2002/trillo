@@ -1,0 +1,46 @@
+.user-nav {
+  display: flex;
+  gap: 3.6rem;
+
+  &__icon-box {
+    position: relative;
+    @include flexCenter;
+  }
+
+  &__icon {
+    width: $header-icon-size;
+    height: $header-icon-size;
+    fill: $color-gray-dark-2;
+  }
+
+  &__bookmarks,
+  &__messages {
+    @include flexCenter;
+  }
+
+  &__counter {
+    background-color: $color-primary;
+    color: $color-gray-light-1;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+
+    @include inlineFlexCenter;
+
+    position: absolute;
+    right: -1.2rem;
+    top: -1.1rem;
+
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  &__profile {
+    @include flexCenter;
+    gap: 1.6rem;
+    &-picture {
+      max-height: $header-profile-size;
+      border-radius: 50%;
+    }
+  }
+}

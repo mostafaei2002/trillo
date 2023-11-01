@@ -1,0 +1,41 @@
+.search {
+  position: relative;
+  align-self: center;
+  height: 100%;
+
+  &__input {
+    border: none;
+    background-color: $color-gray-light-3;
+    border-radius: 100rem;
+    width: 45rem;
+    height: 100%;
+    margin: auto 0;
+    padding: 1.2rem 2rem;
+    transition: all 0.3s;
+
+    &::placeholder {
+      color: $color-gray-dark-3;
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+
+    &:focus {
+      width: 50rem;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 50%;
+    right: 1.2rem;
+    transform: translateY(-50%);
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-gray-dark-2;
+  }
+}

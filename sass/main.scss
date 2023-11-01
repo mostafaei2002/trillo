@@ -10,8 +10,12 @@
 @import "base/utilities";
 
 // Components
+@import "components/search";
+@import "components/user-nav";
 
 // Layout
+@import "layout/header";
+@import "layout/layout";
 
 // Pages
 @import "pages/home";
