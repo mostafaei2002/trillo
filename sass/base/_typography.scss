@@ -13,4 +13,11 @@ body {
 }
 
 .paragraph {
+  font-size: inherit;
+  font-weight: 400;
+  line-height: 1.6;
+
+  &:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
 }
