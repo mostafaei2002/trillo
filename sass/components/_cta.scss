@@ -1,0 +1,56 @@
+.cta {
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.6rem;
+
+  &__book-now {
+    color: $color-gray-dark-2;
+    margin-bottom: 2.4rem;
+  }
+
+  &__btn {
+    position: relative;
+    width: 28rem;
+    height: 6rem;
+    background-color: $color-primary;
+    overflow: hidden;
+
+    &:link,
+    &:visited {
+      color: $color-white;
+      text-decoration: none;
+      border-radius: 100rem;
+    }
+
+    &-face {
+      position: absolute;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      transition: all 0.3s;
+
+      &--front {
+        @include absCenter;
+      }
+
+      &--back {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -250%);
+      }
+    }
+
+    &:hover .cta__btn-face--front {
+      transform: translate(-50%, 250%);
+    }
+
+    &:hover .cta__btn-face--back {
+      transform: translate(-50%, -50%);
+    }
+  }
+}

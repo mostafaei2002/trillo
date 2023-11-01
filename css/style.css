@@ -64,6 +64,45 @@ body {
   .btn--md {
     font-size: 1.6rem; }
 
+.cta {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.6rem; }
+  .cta__book-now {
+    color: #777;
+    margin-bottom: 2.4rem; }
+  .cta__btn {
+    position: relative;
+    width: 28rem;
+    height: 6rem;
+    background-color: #eb2f64;
+    overflow: hidden; }
+    .cta__btn:link, .cta__btn:visited {
+      color: #fff;
+      text-decoration: none;
+      border-radius: 100rem; }
+    .cta__btn-face {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s; }
+      .cta__btn-face--front {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .cta__btn-face--back {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -250%); }
+    .cta__btn:hover .cta__btn-face--front {
+      transform: translate(-50%, 250%); }
+    .cta__btn:hover .cta__btn-face--back {
+      transform: translate(-50%, -50%); }
+
 .details {
   display: flex;
   gap: 3.6rem; }
@@ -79,7 +118,8 @@ body {
   padding: 0 2.4rem;
   display: flex;
   flex-direction: column;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.15); }
   .description-box {
     padding: 2.4rem 0; }
     .description-box:not(:last-child) {
