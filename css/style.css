@@ -94,6 +94,12 @@ body {
       max-height: 3.6rem;
       border-radius: 50%; }
 
+.gallery {
+  display: flex; }
+  .gallery__img {
+    max-width: 33.33333%;
+    display: block; }
+
 .header {
   display: flex;
   background-color: #faf9f9;
