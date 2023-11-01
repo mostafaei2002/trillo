@@ -2,10 +2,11 @@
   display: flex;
   background-color: $color-gray-light-1;
   justify-content: space-between;
-  padding: 1.6rem;
+  align-items: center;
 
   &__logo-box {
-    height: 4rem;
+    height: 3.6rem;
+    margin-left: 1.6rem;
   }
 
   &__logo {

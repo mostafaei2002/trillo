@@ -52,8 +52,12 @@ body {
     fill: #777; }
 
 .user-nav {
-  display: flex;
-  gap: 3.6rem; }
+  display: flex; }
+  .user-nav > * {
+    padding: 1.6rem 2.4rem;
+    transition: all 0.1s; }
+    .user-nav > *:hover {
+      background-color: #f0eeee; }
   .user-nav__icon-box {
     position: relative;
     display: flex;
@@ -94,9 +98,10 @@ body {
   display: flex;
   background-color: #faf9f9;
   justify-content: space-between;
-  padding: 1.6rem; }
+  align-items: center; }
   .header__logo-box {
-    height: 4rem; }
+    height: 3.6rem;
+    margin-left: 1.6rem; }
   .header__logo {
     height: 100%;
     display: block; }
