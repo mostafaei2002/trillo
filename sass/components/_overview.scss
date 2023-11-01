@@ -1,0 +1,62 @@
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-gray-light-1;
+
+  .heading-primary {
+    padding: 1.6rem 0 1.6rem 3.6rem;
+  }
+  &__stars {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-star {
+    width: $icon-star-size;
+    height: $icon-star-size;
+    fill: $color-primary;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &-link {
+      text-decoration: none;
+      &:link,
+      &:visited {
+        color: $color-primary;
+        font-size: 1.2rem;
+        border-bottom: 1px solid $color-primary;
+        transition: all 0.3s;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-gray-dark-1;
+        border-bottom: 1px solid $color-gray-dark-1;
+      }
+    }
+  }
+
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-primary;
+    color: $color-gray-light-1;
+    padding: 1.2rem 1.6rem;
+
+    &-average {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    &-count {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+}
