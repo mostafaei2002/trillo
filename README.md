@@ -6,4 +6,6 @@ A follow-through project with advanced css course by jonas schmedtmann. All layo
 
 download and run index.html or run on a localhost.
 
+## Live version on Github
+
 [click here to see live demo on Github pages](https://mostafaei2002.github.io/trillo/)
