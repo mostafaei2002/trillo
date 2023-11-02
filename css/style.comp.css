@@ -173,15 +173,15 @@ body {
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    background-image: url("../../img/chevron-thin-right.svg");
+    background-image: url("../img/chevron-thin-right.svg");
     background-size: cover;
     margin-right: 0.6rem; }
-  @supports ((-webkit-mask-image: url("../../img/chevron-thin-right.svg")) and (-webkit-mask-size: cover)) or ((mask-image: url("../../img/chevron-thin-right.svg")) and (mask-size: cover)) {
+  @supports ((-webkit-mask-image: url("../img/chevron-thin-right.svg")) and (-webkit-mask-size: cover)) or ((mask-image: url("../img/chevron-thin-right.svg")) and (mask-size: cover)) {
     .description__item::before {
       background-image: none;
       background-color: #eb2f64;
-      -webkit-mask-image: url("../../img/chevron-thin-right.svg");
-      mask-image: url("../../img/chevron-thin-right.svg");
+      -webkit-mask-image: url("../img/chevron-thin-right.svg");
+      mask-image: url("../img/chevron-thin-right.svg");
       -webkit-mask-size: cover;
       mask-size: cover; } }
   .description__recommend {
