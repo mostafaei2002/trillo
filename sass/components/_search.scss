@@ -17,6 +17,11 @@
       width: 25rem;
     }
 
+    @include respond(phone) {
+      width: 100%;
+      border-radius: 0;
+    }
+
     &::placeholder {
       color: $color-gray-dark-3;
       font-size: 1.4rem;
@@ -28,6 +33,10 @@
 
       @include respond(tab-port) {
         width: 30rem;
+      }
+
+      @include respond(phone) {
+        width: 100%;
       }
     }
   }

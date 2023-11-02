@@ -138,6 +138,9 @@ body {
 .details {
   display: flex;
   gap: 3.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .details {
+      flex-wrap: wrap; } }
   .details__reviews {
     display: flex;
     flex-direction: column;
@@ -162,6 +165,9 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 37.5em) {
+      .description__list {
+        height: auto; } }
   .description__item::before {
     content: "";
     display: inline-block;
@@ -258,6 +264,10 @@ body {
     @media only screen and (max-width: 56.25em) {
       .search__input {
         width: 25rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .search__input {
+        width: 100%;
+        border-radius: 0; } }
     .search__input::placeholder {
       color: #999;
       font-size: 1.4rem;
@@ -267,6 +277,9 @@ body {
       @media only screen and (max-width: 56.25em) {
         .search__input:focus {
           width: 30rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .search__input:focus {
+          width: 100%; } }
   .search__btn {
     position: absolute;
     background-color: transparent;
@@ -333,11 +346,27 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #faf9f9; }
+  @media only screen and (max-width: 37.5em) {
+    .overview {
+      flex-wrap: wrap;
+      align-content: space-between;
+      gap: 1.6rem;
+      padding: 1.2rem 0 0 1.2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .overview .flex-group {
+      justify-content: space-between;
+      flex: 0 0 100%; } }
   .overview .heading-primary {
     padding: 1.6rem 0 1.6rem 3.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview .heading-primary {
+        padding: 0; } }
   .overview__stars {
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__stars {
+        padding-right: 1.2rem; } }
   .overview__icon-star {
     width: 2rem;
     height: 2rem;
@@ -346,6 +375,10 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem; }
+  .overview__icon-location {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: #eb2f64; }
   .overview__rating {
     display: flex;
     flex-direction: column;
@@ -365,6 +398,10 @@ body {
   background-color: #faf9f9;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      flex-wrap: wrap;
+      padding-bottom: 1.2rem; } }
   .header__logo-box {
     height: 3.6rem;
     margin-left: 1.6rem; }
@@ -377,6 +414,11 @@ body {
     @media only screen and (max-width: 56.25em) {
       .header__search-box {
         height: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__search-box {
+        height: 4rem;
+        order: 10;
+        flex-basis: 100%; } }
 
 .container {
   max-width: 120rem;
@@ -416,6 +458,9 @@ body {
         align-items: center;
         justify-content: center;
         flex-grow: 1; } }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__item {
+        padding: 0.8rem 0.8rem; } }
   .side-nav__link {
     display: flex;
     justify-content: flex-start;

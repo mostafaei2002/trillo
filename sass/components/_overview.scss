@@ -4,12 +4,34 @@
   align-items: center;
   background-color: $color-gray-light-1;
 
+  @include respond(phone) {
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 1.6rem;
+    padding: 1.2rem 0 0 1.2rem;
+  }
+
+  @include respond(phone) {
+    .flex-group {
+      justify-content: space-between;
+      flex: 0 0 100%;
+    }
+  }
+
   .heading-primary {
     padding: 1.6rem 0 1.6rem 3.6rem;
+
+    @include respond(phone) {
+      padding: 0;
+    }
   }
   &__stars {
     display: flex;
     align-items: center;
+
+    @include respond(phone) {
+      padding-right: 1.2rem;
+    }
   }
 
   &__icon-star {
@@ -22,6 +44,12 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+  }
+
+  &__icon-location {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $color-primary;
   }
 
   &__rating {

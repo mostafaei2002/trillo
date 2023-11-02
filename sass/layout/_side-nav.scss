@@ -33,6 +33,10 @@
       @include flexCenter;
       flex-grow: 1;
     }
+
+    @include respond(phone) {
+      padding: 0.8rem 0.8rem;
+    }
   }
 
   &__link {
