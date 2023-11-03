@@ -4,6 +4,8 @@
   align-items: center;
   background-color: $color-gray-light-1;
 
+  border-bottom: 1px solid $color-gray-light-2;
+
   @include respond(phone) {
     flex-wrap: wrap;
     align-content: space-between;
